@@ -1,0 +1,88 @@
+:root {
+  /* ### Primary */
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+
+  --ff-h: "Big Shoulders Display", cursive;
+  --ff-p: "Lexend Deca", sans-serif;
+}
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--Very-light-gray-background-headings-buttons);
+  color: var(--Very-light-gray-background-headings-buttons);
+}
+
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 500px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+}
+.car__type {
+  color: var(--Very-light-gray-background-headings-buttons);
+  font-family: var(--ff-h);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.car__description {
+  font-family: var(--ff-p);
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: var(--Transparent-white-paragraphs);
+}
+.car {
+  padding: 2.5rem;
+}
+.car1 {
+  background-color: var(--Bright-orange);
+}
+.car2 {
+  background-color: var(--Dark-cyan);
+}
+.car3 {
+  background-color: var(--Very-dark-cyan);
+}
+.btn {
+  margin-top: 3rem;
+  border: 2px solid white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  background-color: var(--Very-light-gray-background-headings-buttons);
+  font-family: var(--ff-p);
+  color: var(--Very-light-gray-background-headings-buttons);
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn__1 {
+  color: var(--Bright-orange);
+}
+.btn__2 {
+  color: var(--Dark-cyan);
+}
+.btn__3 {
+  color: var(--Very-dark-cyan);
+}
+
+.btn__1:hover {
+  background-color: var(--Bright-orange);
+}
+.btn__2:hover {
+  background-color: var(--Dark-cyan);
+}
+.btn__3:hover {
+  background-color: var(--Very-dark-cyan);
+}
